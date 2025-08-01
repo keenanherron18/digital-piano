@@ -41,10 +41,10 @@ document.addEventListener("keydown", (e) => {
   const noteName = keyMap[e.key.toLowerCase()];
   if (noteName) {
     const fullNote = noteName + currentOctave; // e.g. C4, Db4, etc.
-    const audio = new Audio(`./sounds/${fullNote.toLowerCase()}.mp3`);
+    const audio = new Audio(`./sounds/${fullNote}.mp3`);
     audio.play();
 
-    const button = document.querySelector(`[data-note="${fullNote.toLowerCase()}"]`);
+    const button = document.querySelector(`[data-note="${fullNote}"]`);
     if (button) {
       button.classList.add("active");
       setTimeout(() => button.classList.remove("active"), 150);
