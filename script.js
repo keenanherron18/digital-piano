@@ -6,9 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const note = key.getAttribute("data-note");
             const formattedNote = note.charAt(0).toUpperCase() + note.slice(1);
             const audio = new Audio(`./sounds/${formattedNote}.mp3`);
+            audio.play(); // <- You were missing this line
+
+            key.classList.add("active");
+            setTimeout(() => key.classList.remove("active"), 150);
         });
-   });
+    });
 });
+
 
 const keyMap = {
   a: "C",
