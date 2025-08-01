@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const keyMap = {
-  a: "C",
+  a: "c",
   w: "Db",
-  s: "D",
+  s: "d",
   e: "Eb",
-  d: "E",
-  f: "F",
+  d: "e",
+  f: "f",
   t: "Gb",
-  g: "G",
+  g: "g",
   y: "Ab",
-  h: "A",
+  h: "a",
   u: "Bb",
-  j: "B",
+  j: "b",
 };
 
 let currentOctave = 4;
