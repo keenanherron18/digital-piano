@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const keyMap = {
-  a: "c",
+  a: "C",
   w: "Db",
-  s: "d",
+  s: "D",
   e: "Eb",
-  d: "e",
-  f: "f",
+  d: "E",
+  f: "F",
   t: "Gb",
-  g: "g",
+  g: "G",
   y: "Ab",
-  h: "a",
+  h: "A",
   u: "Bb",
-  j: "b",
+  j: "B",
 };
 
 let currentOctave = 4;
@@ -41,10 +41,10 @@ document.addEventListener("keydown", (e) => {
   const noteName = keyMap[e.key.toLowerCase()];
   if (noteName) {
     const fullNote = noteName + currentOctave; // e.g. C4, Db4, etc.
-    const audio = new Audio(`./sounds/${fullNote}.mp3`);
+    const audio = new Audio(`./sounds/${fullNote.toLowerCase()}.mp3`);
     audio.play();
 
-    const button = document.querySelector(`[data-note="${fullNote}"]`);
+    const button = document.querySelector(`[data-note="${fullNote.toLowerCase()}"]`);
     if (button) {
       button.classList.add("active");
       setTimeout(() => button.classList.remove("active"), 150);
