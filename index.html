@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Digital Piano!</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Digital Piano!</h1>
+    </div>
+
+    <div class="piano-legend">
+        <ul>
+            <li>arrow up = Octave +1</li>
+            <li>arrow down = Octave -1</li>
+        </ul>
+    </div>
+
+    <div class="all-keys">
+        <div class="white-keys">
+            <button id="a0" data-note="a0">A</button>
+            <button id="b0" data-note="b0">B</button>
+
+            <button id="c1" data-note="c1">C</button>
+            <button id="d1" data-note="d1">D</button>
+            <button id="e1" data-note="e1">E</button>
+            <button id="f1" data-note="f1">F</button>
+            <button id="g1" data-note="g1">G</button>
+            <button id="a1" data-note="a1">A</button>
+            <button id="b1" data-note="b1">B</button>
+
+            <button id="c2" data-note="c2">C</button>
+            <button id="d2" data-note="d2">D</button>
+            <button id="e2" data-note="e2">E</button>
+            <button id="f2" data-note="f2">F</button>
+            <button id="g2" data-note="g2">G</button>
+            <button id="a2" data-note="a2">A</button>
+            <button id="b2" data-note="b2">B</button>
+
+            <button id="c3" data-note="c3">C</button>
+            <button id="d3" data-note="d3">D</button>
+            <button id="e3" data-note="e3">E</button>
+            <button id="f3" data-note="f3">F</button>
+            <button id="g3" data-note="g3">G</button>
+            <button id="a3" data-note="a3">A</button>
+            <button id="b3" data-note="b3">B</button>
+
+            <button id="c4" data-note="c4">C</button>
+            <button id="d4" data-note="d4">D</button>
+            <button id="e4" data-note="e4">E</button>
+            <button id="f4" data-note="f4">F</button>
+            <button id="g4" data-note="g4">G</button>
+            <button id="a4" data-note="a4">A</button>
+            <button id="b4" data-note="b4">B</button>
+
+            <button id="c5" data-note="c5">C</button>
+            <button id="d5" data-note="d5">D</button>
+            <button id="e5" data-note="e5">E</button>
+            <button id="f5" data-note="f5">F</button>
+            <button id="g5" data-note="g5">G</button>
+            <button id="a5" data-note="a5">A</button>
+            <button id="b5" data-note="b5">B</button>
+
+            <button id="c6" data-note="c6">C</button>
+            <button id="d6" data-note="d6">D</button>
+            <button id="e6" data-note="e6">E</button>
+            <button id="f6" data-note="f6">F</button>
+            <button id="g6" data-note="g6">G</button>
+            <button id="a6" data-note="a6">A</button>
+            <button id="b6" data-note="b6">B</button>
+
+            <button id="c7" data-note="c7">C</button>
+            <button id="d7" data-note="d7">D</button>
+            <button id="e7" data-note="e7">E</button>
+            <button id="f7" data-note="f7">F</button>
+            <button id="g7" data-note="g7">G</button>
+            <button id="a7" data-note="a7">A</button>
+            <button id="b7" data-note="b7">B</button>
+
+            <button id="c8" data-note="c8">C</button>
+        </div>
+
+        <div class="black-keys">
+            <button id="Bb0" data-note="Bb0" style="left: 1.4%;"><span>Bb</span></button>
+
+            <button id="Db1" data-note="Db1" style="left: 5.3%;"><span>Db</span></button>
+            <button id="Eb1" data-note="Eb1" style="left: 7.2%;"><span>Eb</span></button>
+            <button id="Gb1" data-note="Gb1" style="left: 11.1%;"><span>Gb</span></button>
+            <button id="Ab1" data-note="Ab1" style="left: 13.0%;"><span>Ab</span></button>
+            <button id="Bb1" data-note="Bb1" style="left: 14.9%;"><span>Bb</span></button>
+
+            <button id="Db2" data-note="Db2" style="left: 18.8%;"><span>Db</span></button>
+            <button id="Eb2" data-note="Bb2" style="left: 20.7%;"><span>Eb</span></button>
+            <button id="Gb2" data-note="Bb2" style="left: 24.5%;"><span>Gb</span></button>
+            <button id="Ab2" data-note="Bb2" style="left: 26.5%;"><span>Ab</span></button>
+            <button id="Bb2" data-note="Bb2" style="left: 28.4%;"><span>Bb</span></button>
+
+            <button id="Db3" data-note="Db3" style="left: 32.3%;"><span>Db</span></button>
+            <button id="Eb3" data-note="Eb3" style="left: 34.2%;"><span>Eb</span></button>
+            <button id="Gb3" data-note="Gb3" style="left: 38.1%;"><span>Gb</span></button>
+            <button id="Ab3" data-note="Ab3" style="left: 40.0%;"><span>Ab</span></button>
+            <button id="Bb3" data-note="Bb3" style="left: 41.9%;"><span>Bb</span></button>
+
+            <button id="Db4" data-note="Db4" style="left: 45.7%;"><span>Db</span></button>
+            <button id="Eb4" data-note="Eb4" style="left: 47.6%;"><span>Eb</span></button>
+            <button id="Gb4" data-note="Gb4" style="left: 51.5%;"><span>Gb</span></button>
+            <button id="Ab4" data-note="Ab4" style="left: 53.4%;"><span>Ab</span></button>
+            <button id="Bb4" data-note="Bb4" style="left: 55.4%;"><span>Bb</span></button>
+
+            <button id="Db5" data-note="Db5" style="left: 59.2%;"><span>Db</span></button>
+            <button id="Eb5" data-note="Eb5" style="left: 61.1%;"><span>Eb</span></button>
+            <button id="Gb5" data-note="Gb5" style="left: 65.0%;"><span>Ab</span></button>
+            <button id="Ab5" data-note="Ab5" style="left: 66.8%;"><span>Ab</span></button>
+            <button id="Bb5" data-note="Bb5" style="left: 68.8%;"><span>Bb</span></button>
+
+            <button id="Db6" data-note="Db6" style="left: 72.7%;"><span>Db</span></button>
+            <button id="Eb6" data-note="Eb6" style="left: 74.6%;"><span>Eb</span></button>
+            <button id="Gb6" data-note="Gb6" style="left: 78.5%;"><span>Ab</span></button>
+            <button id="Ab6" data-note="Ab6" style="left: 80.3%;"><span>Ab</span></button>
+            <button id="Bb6" data-note="Bb6" style="left: 82.3%;"><span>Bb</span></button>
+
+            <button id="Db7" data-note="Db7" style="left: 86.1%;"><span>Db</span></button>
+            <button id="Eb7" data-note="Eb7" style="left: 88.0%;"><span>Eb</span></button>
+            <button id="Gb7" data-note="Gb7" style="left: 91.9%;"><span>Ab</span></button>
+            <button id="Ab7" data-note="Ab7" style="left: 93.8%;"><span>Ab</span></button>
+            <button id="Bb7" data-note="Bb7" style="left: 95.7%;"><span>Bb</span></button>
+        </div>
+    </div>
+</body>
+</html>
